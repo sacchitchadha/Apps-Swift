@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Age" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAT AGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcE-j5-KAx">
+                                <rect key="frame" x="20" y="49" width="335" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="aul-jY-yv6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your cat's age?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D8-HR-kzk">
+                                <rect key="frame" x="65" y="112" width="260" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQj-eY-I0c">
+                                <rect key="frame" x="283" y="208" width="72" height="30"/>
+                                <state key="normal" title="Submit--&gt;"/>
+                                <connections>
+                                    <action selector="calcResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auC-kJ-jdx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz7-8W-Afw">
+                                <rect key="frame" x="20" y="267" width="335" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="fh0-cU-4be"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="eme-tG-fdK">
+                                <rect key="frame" x="62" y="343" width="266" height="247.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eme-tG-fdK" secondAttribute="height" multiplier="43:40" id="AIO-8h-dI4"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wcj-kc-dEg">
+                                <rect key="frame" x="20" y="170" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DcE-j5-KAx" firstAttribute="leading" secondItem="Jz7-8W-Afw" secondAttribute="leading" id="4SK-3u-Vxr"/>
+                            <constraint firstItem="2D8-HR-kzk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="4yi-uU-8rB"/>
+                            <constraint firstItem="DcE-j5-KAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B1R-9d-tjK"/>
+                            <constraint firstItem="zQj-eY-I0c" firstAttribute="top" secondItem="Wcj-kc-dEg" secondAttribute="bottom" constant="8" id="Doy-my-dCM"/>
+                            <constraint firstItem="Wcj-kc-dEg" firstAttribute="top" secondItem="DcE-j5-KAx" secondAttribute="bottom" constant="57" id="Fda-XJ-FtO"/>
+                            <constraint firstItem="DcE-j5-KAx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="Fvo-Dd-ooB"/>
+                            <constraint firstItem="DcE-j5-KAx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="IgB-hJ-63A"/>
+                            <constraint firstItem="Jz7-8W-Afw" firstAttribute="top" secondItem="zQj-eY-I0c" secondAttribute="bottom" constant="29" id="PRu-ko-rnq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2D8-HR-kzk" secondAttribute="trailing" constant="34" id="RCj-ff-Y1a"/>
+                            <constraint firstItem="Wcj-kc-dEg" firstAttribute="top" secondItem="2D8-HR-kzk" secondAttribute="bottom" constant="8" id="RNk-4q-SFC"/>
+                            <constraint firstItem="DcE-j5-KAx" firstAttribute="leading" secondItem="Wcj-kc-dEg" secondAttribute="leading" id="X2p-YE-nkV"/>
+                            <constraint firstItem="DcE-j5-KAx" firstAttribute="trailing" secondItem="Jz7-8W-Afw" secondAttribute="trailing" id="XLP-vW-r0H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eme-tG-fdK" secondAttribute="trailing" constant="31" id="itd-90-xCP"/>
+                            <constraint firstItem="DcE-j5-KAx" firstAttribute="trailing" secondItem="Wcj-kc-dEg" secondAttribute="trailing" id="mbS-J6-1cN"/>
+                            <constraint firstItem="eme-tG-fdK" firstAttribute="top" secondItem="Jz7-8W-Afw" secondAttribute="bottom" constant="53" id="nMQ-cF-Qbg"/>
+                            <constraint firstItem="eme-tG-fdK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="vgW-sW-3iq"/>
+                            <constraint firstItem="DcE-j5-KAx" firstAttribute="trailing" secondItem="zQj-eY-I0c" secondAttribute="trailing" id="vmZ-oa-POc"/>
+                            <constraint firstItem="2D8-HR-kzk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49" id="xrr-dP-fKf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ResultField" destination="Jz7-8W-Afw" id="xXY-fU-H0T"/>
+                        <outlet property="catAgeField" destination="Wcj-kc-dEg" id="PAV-bU-Hfj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="306.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images.jpeg" width="225" height="225"/>
+    </resources>
+</document>
