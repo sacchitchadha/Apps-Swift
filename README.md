@@ -12,5 +12,4 @@ These are some small apps which I made as a part of learning Swift. These apps a
 
 5. iWatch - A simple stopwatch that can be paused and reset.
 
-
-                                            More Coming Soon!
+6. Weather app - A simple weather app that displays the weather of a paticular location entered by the user 
